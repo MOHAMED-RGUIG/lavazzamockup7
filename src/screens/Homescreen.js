@@ -46,7 +46,7 @@ export default function Homescreen() {
               
             </div>
            
-            <img src="https://lavazzamockup7.onrender.com/public/lavazza1.jpg" alt="Lavazza" className='col-11 col-md-11 mt-3' />
+            <img src="../lavazza1.jpg" alt="Lavazza" className='col-11 col-md-11 mt-3' />
 
             <div className="category-buttons mt-5 col-xs-12 col-12 col-md-12 col-xl-10">
     <button 

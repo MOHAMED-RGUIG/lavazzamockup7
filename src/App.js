@@ -16,8 +16,9 @@ function App() {
   return (
     
     <div className="App">
-      <Navbar />
+     
       <BrowserRouter>
+     <Navbar />
         <Routes>
           <Route path='/' element={<Homescreen />} />
           <Route path='/cart' element={<Cartscreen />} />
@@ -26,8 +27,9 @@ function App() {
           <Route path="/orders" element={<CartDetailsScreen/>} />
           <Route path="/allorders" element={<CartAllOrders/>} />
         </Routes>
+    <Footer style={{position:'relative',bottom:'0'}} />
       </BrowserRouter>
-      <Footer style={{position:'relative',bottom:'0'}} />
+    
     </div>
   );
 }

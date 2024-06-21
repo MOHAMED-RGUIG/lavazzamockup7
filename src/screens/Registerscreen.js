@@ -31,7 +31,7 @@ export default function Registerscreen() {
   return (
     <div>
         <div className='row justify-content-center mt-5'>
-        <img src="/lavazza2.jpg" alt="Lavazza" style={{  }} className='col-11 col-md-11' />
+        <img src="https://i.postimg.cc/J02c6QfF/Lavazza2.jpg" alt="Lavazza" style={{  }} className='col-11 col-md-11' />
 
             <div className='col-md-11 col-11 mt-5 text-start shadow-lg p-3 mb-5 bg-body rounded'>
                 {loading && (<Loading/>)}

@@ -42,8 +42,9 @@ export const getAllOrders = () => async dispatch => {
 
     try {
         const response = await axios.get('https://lavazzamockup-api1.onrender.com/api/orders/getallorders');
+           withCredentials: true ;
         dispatch({ type: 'GET_ORDERS_SUCCESS', payload: response.data });
-          withCredentials: true ;
+       
     } catch (error) {
         dispatch({ 
             type: 'GET_ORDERS_FAILED', 

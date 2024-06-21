@@ -6,7 +6,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Homescreen from './screens/Homescreen';
 import Cartscreen from './screens/Cartscreen';
-import Loginscreen from './screens/Loginscreen';
+import Loginscreen from '/screens/Loginscreen';
 import Registerscreen from './screens/Registerscreen';
 import CartDetailsScreen from './screens/CartDetailsScreen';
 import Footer from './components/Footer';

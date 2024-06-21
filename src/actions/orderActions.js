@@ -26,7 +26,9 @@ export const getUserOrders = () => async (dispatch, getState) => {
     dispatch({ type: 'GET_USER_ORDERS_REQUEST' });
 
     try {
-        const response = await axios.post('https://lavazzamockup-api1.onrender.com/api/orders/getuserorders', { userid: currentUser[0]._id });
+        const response = await axios.post('https://lavazzamockup-api1.onrender.com/api/orders/getuserorders', { userid: currentUser[0]._id }, {
+            withCredentials: true // Ensure credentials are included if necessary
+        });
         dispatch({ type: 'GET_USER_ORDERS_SUCCESS', payload: response.data });
          
     } catch (error) {
@@ -43,7 +45,9 @@ export const getAllOrders = () => async dispatch => {
     dispatch({ type: 'GET_ORDERS_REQUEST' });
 
     try {
-        const response = await axios.get('https://lavazzamockup-api1.onrender.com/api/orders/getallorders');
+        const response = await axios.get('https://lavazzamockup-api1.onrender.com/api/orders/getallorders', {
+            withCredentials: true // Ensure credentials are included if necessary
+        });
 
         dispatch({ type: 'GET_ORDERS_SUCCESS', payload: response.data });
        

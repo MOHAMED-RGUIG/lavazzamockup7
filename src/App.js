@@ -22,7 +22,7 @@ function App() {
           <Route path='/' element={<Homescreen />} />
           <Route path='../cart' element={<Cartscreen />} />
           <Route path='../register' element={<Registerscreen />} />
-          <Route path='/login' element={<Loginscreen />} />
+          <Route path='https://lavazzamockup7.onrender.com/login' element={<Loginscreen />} />
           <Route path="../orders" element={<CartDetailsScreen/>} />
           <Route path="../allorders" element={<CartAllOrders/>} />
         </Routes>

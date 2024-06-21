@@ -29,7 +29,7 @@ window.location.href='/'
     <div>
    
             <div className='row justify-content-center mt-5'>
-               <img src="/lavazza4.jpg" alt="Lavazza" style={{  }} className='col-11 col-md-11' />
+               <img src="https://i.postimg.cc/43kwRBYk/lavazza4.webp" alt="Lavazza" style={{  }} className='col-11 col-md-11' />
             <div className='col-md-11 col-11 mt-5 text-start shadow-lg p-3 mb-5 bg-body rounded'>
                 <h2 className='text-center m-2' style={{fontSize:'35px'}}>Login</h2>
 

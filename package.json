@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://lavazzamockup-api.onrender.com/",
+  "proxy": "https://lavazzamockup-api1.onrender.com/",
   "dependencies": {
     "@react-aria/ssr": "^3.9.3",
    

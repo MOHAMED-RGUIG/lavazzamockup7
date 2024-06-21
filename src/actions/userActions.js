@@ -7,7 +7,7 @@ try{
     const response = await axios.post('https://lavazzamockup-api1.onrender.com/api/users/register',user)
     console.log(response);
     dispatch({type:'USER_REGISTER_SUCCESS'});
-      withCredentials: true ;
+      
 
 }catch(error){
     dispatch({type:'USER_REGISTER_FAILED',payload:error})
@@ -21,7 +21,7 @@ export const loginUser=(user) =>async dispatch=>{
 try{
     const response = await axios.post('https://lavazzamockup-api1.onrender.com/api/users/login',user)
     console.log(response);
-      withCredentials: true ;
+      
     dispatch({type:'USER_LOGIN_SUCCESS', payload: response.data})
     localStorage.setItem('currentUser', JSON.stringify(response.data))
     window.location.href='/'

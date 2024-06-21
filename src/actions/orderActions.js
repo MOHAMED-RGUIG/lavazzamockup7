@@ -8,7 +8,7 @@ export const placeOrder=(subtotal,codeClient,raisonSocial,adresse,tel,emailClt,c
 try{
     const response = await axios.post('https://lavazzamockup-api1.onrender.com/api/orders/placeorder',{subtotal ,currentUser, cartItems,codeClient,raisonSocial,adresse,tel,emailClt,comment})
     console.log(response);
-      withCredentials: true ;
+   
     dispatch({type:'PLACE_ORDER_SUCCESS'})
 
 }catch(error){
